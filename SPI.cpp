@@ -5,7 +5,7 @@ int spi_cs1_fd = -1;
 
 unsigned char spi_mode = SPI_MODE_3;
 unsigned char spi_bitsPerWord = 8;
-unsigned int spi_speed = 5000000; //1000000 = 1MHz (1uS per bit)
+unsigned int spi_speed = 20000000; //1000000 = 1MHz (1uS per bit)
 
 
 int SpiOpenPort (int spi_device)
