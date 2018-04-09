@@ -39,7 +39,7 @@ LeptonThread::~LeptonThread() {}
 void LeptonThread::run()
 {
 	//Create the initial image and open the Spi port.
-	uint16_t spi_port = 1;
+	uint16_t spi_port = 0;
 	myImage = QImage(160, 120, QImage::Format_RGB888);
 	SpiOpenPort(spi_port);
 	uint16_t minValue;
