@@ -14,7 +14,7 @@ uint8_t LCD_ShowBmp(char *name)
     BMPINF bmpInfoHeader;         //Define a bmp bitmap header structure 
 
     //Binary file open
-    if((fp = fopen("./pic/"+*name, "rb")) == NULL) { // fp = 0x00426aa0
+    if((fp = fopen(name, "rb")) == NULL) { // fp = 0x00426aa0
         printf("Cann't open the file!\n");
         return 0;
     }
