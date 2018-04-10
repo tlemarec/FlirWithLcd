@@ -22,7 +22,7 @@
 #define LCD_BL   24
 
 //SPI
-#define LCD_SPI_SPEED 27000000 //EDIT bcm : 15.625MHz on Rpi2, 25MHz on RPI3
+#define LCD_SPI_SPEED 16 //EDIT bcm : 15.625MHz on Rpi2, 25MHz on RPI3
 #define LCD_SPI_MODE 0 //EDIT
 
 #define SPI_MOSI_0		digitalWrite(SPI_MOSI,LOW)

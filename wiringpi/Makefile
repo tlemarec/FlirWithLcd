@@ -10,7 +10,7 @@ TARGET = tftlcd_1in8
 
 CC = gcc
 
-DEBUG = -g -O0 -Wall
+DEBUG = -g -O3 -Wall
 CFLAGS += $(DEBUG)
 
 LIB = -lwiringPi
@@ -25,4 +25,4 @@ ${DIR_BIN}/%.o:$(DIR_FONTS)/%.c
 	$(CC) $(CFLAGS) -c  $< -o $@ 
 	
 clean :
-	$(RM) $(DIR_BIN)/*.* $(TARGET) $(DIR_OBJ)/.*.sw?
+	$(RM) $(TARGET) $(DIR_OBJ)/.*.sw?
