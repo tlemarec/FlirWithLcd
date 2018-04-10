@@ -20,9 +20,9 @@ int main(void)
 	LCD_SCAN_DIR LCD_ScanDir = SCAN_DIR_DFT;//SCAN_DIR_DFT = D2U_L2R
 	LCD_Init(LCD_ScanDir );	
 	
-	printf("LCD Show \r\n");
-	GUI_Show();
-	Driver_Delay_ms(1000);
+	//printf("LCD Show \r\n"); //EDIT
+	//GUI_Show();
+	//Driver_Delay_ms(1000);
 	
 	printf("show bmp\r\n");
 	LCD_ShowBmp();

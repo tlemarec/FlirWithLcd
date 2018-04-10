@@ -15,12 +15,16 @@
 #define SPI_MISO 9
 #define SPI_MOSI 10
 #define SPI_SCK  11
-#define LCD_CS   8
+#define LCD_CS   7 //CS : GPIO number table : 7 = 1 & 8 = 0 //EDIT
+#define SPI_CE	 1 //CS : CE number table : 7 = 1 & 8 = 0
 #define LCD_RST  27
 #define LCD_DC   25
 #define LCD_BL   24
 
 //SPI
+#define SPI_SPEED 27000000 //EDIT bcm : 15.625MHz on Rpi2, 25MHz on RPI3
+#define SPI_MODE 0 //EDIT
+
 #define SPI_MOSI_0		digitalWrite(SPI_MOSI,LOW)
 #define SPI_MOSI_1		digitalWrite(SPI_MOSI,HIGH)
 

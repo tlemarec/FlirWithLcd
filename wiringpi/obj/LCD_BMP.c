@@ -26,7 +26,7 @@ uint8_t LCD_ShowBmp(void)
     //printf("sizeof(BMPFILEHEADER) = %d\n", sizeof(BMPFILEHEADER));
     //printf("sizeof(bmpInfoHeader) = %d\n", sizeof(bmpInfoHeader));
 
-    //file header information
+    /*//file header information //EDIT
 	printf("********************************************************\r\n" );
     printf("file header information:\n"                                   );
     printf(" FileSize         : %ld  \r\n" , bmpFileHeader.bSize          );
@@ -48,7 +48,8 @@ uint8_t LCD_ShowBmp(void)
     printf(" YPPM             : %ld  \r\n" , bmpInfoHeader.bYPelsPerMeter );
     printf(" CCT              : %ld  \r\n" , bmpInfoHeader.bClrUsed       );
     printf(" ICC              : %ld  \r\n" , bmpInfoHeader.bClrImportant  );
-    
+    */
+   
 	int row, col;
     short data;
 	RGBQUAD rgb;

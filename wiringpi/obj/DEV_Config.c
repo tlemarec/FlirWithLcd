@@ -25,7 +25,7 @@ uint8_t System_Init(void)
 
     //3.spi init
     //wiringPiSPISetup(0,9000000);
-    wiringPiSPISetupMode(0, 32000000, 0);
+    wiringPiSPISetupMode(SPI_CE, SPI_SPEED, SPI_MODE); //(int channel, int speed, int mode) //EDIT
     return 0;
 }
 
@@ -41,7 +41,7 @@ void System_Exit(void)
 void SPI_Write_Byte(uint8_t value)
 {
     int read_data;
-    read_data = wiringPiSPIDataRW(0,&value,1);
+    read_data = wiringPiSPIDataRW(SPI_CE,&value,1); //(int channel, unsigned char *data, int len) //EDIT
     if(read_data < 0)
         perror("wiringPiSPIDataRW failed\r\n");
 }

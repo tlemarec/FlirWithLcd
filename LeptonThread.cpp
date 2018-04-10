@@ -83,7 +83,7 @@ void LeptonThread::run()
 		
 		if (resets) {
 			SpiClosePort(spi_port);
-			usleep(100000);		// wait 0.1 seconds before re-opening
+			usleep(50000);		// wait 0.1 seconds before re-opening //EDIT
 			SpiOpenPort(spi_port);
 		}
 		if (flag) {
