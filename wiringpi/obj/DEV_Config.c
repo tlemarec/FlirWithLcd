@@ -25,7 +25,7 @@ uint8_t System_Init(void)
 
     //3.spi init
     //wiringPiSPISetup(0,9000000);
-    wiringPiSPISetupMode(LCD_SPI_CE, SPI_SPEED, SPI_MODE); //(int channel, int speed, int mode) //EDIT
+    wiringPiSPISetupMode(LCD_SPI_CE, LCD_SPI_SPEED, LCD_SPI_MODE); //(int channel, int speed, int mode) //EDIT
     return 0;
 }
 
