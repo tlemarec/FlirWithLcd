@@ -13,7 +13,7 @@
 #define PACKET_SIZE_UINT16 1640 //(PACKET_SIZE/2)
 #define PACKETS_PER_FRAME 12
 #define FRAME_SIZE_UINT16 19680 //(PACKET_SIZE_UINT16*PACKETS_PER_FRAME)
-#define FLIR_SPI_PORT uint16_t 0
+#define FLIR_SPI_PORT 0
 
 class LeptonThread : public QThread
 {
