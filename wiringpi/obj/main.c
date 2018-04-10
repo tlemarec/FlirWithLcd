@@ -28,6 +28,8 @@ int main(void)
 	LCD_ShowBmp("time.bmp");
 	LCD_ShowBmp("ir.bmp");
 	
+	//HELLO
+
 	//3.System Exit
 	System_Exit();
 	return 0;
