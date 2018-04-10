@@ -25,7 +25,8 @@ int main(void)
 	//Driver_Delay_ms(1000);
 	
 	printf("show bmp\r\n");
-	LCD_ShowBmp();
+	LCD_ShowBmp("time.bmp");
+	LCD_ShowBmp("ir.bmp");
 	
 	//3.System Exit
 	System_Exit();

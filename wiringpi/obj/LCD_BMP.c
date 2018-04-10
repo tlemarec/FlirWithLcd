@@ -7,14 +7,14 @@
 #include <stdlib.h>	//memset
 extern LCD_DIS sLCD_DIS;
 
-uint8_t LCD_ShowBmp(void)
+uint8_t LCD_ShowBmp(char name)
 {
     FILE *fp;                     //Define a file pointer 
     BMPFILEHEADER bmpFileHeader;  //Define a bmp file header structure
     BMPINF bmpInfoHeader;         //Define a bmp bitmap header structure 
 
     //Binary file open
-    if((fp = fopen("./pic/time.bmp", "rb")) == NULL) { // fp = 0x00426aa0
+    if((fp = fopen("./pic/"+name, "rb")) == NULL) { // fp = 0x00426aa0
         printf("Cann't open the file!\n");
         return 0;
     }

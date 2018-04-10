@@ -45,5 +45,5 @@ typedef struct RGB_QUAD {
 } __attribute__ ((packed)) RGBQUAD;
 /**************************************** end ***********************************************/
 
-uint8_t LCD_ShowBmp(void);
+uint8_t LCD_ShowBmp(char name);
 #endif
